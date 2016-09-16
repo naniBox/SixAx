@@ -1,0 +1,8 @@
+device STM32F103T8
+halt
+r
+loadbin src/build/SixAx.bin 0x08000000
+verifybin src/build/SixAx.bin 0x08000000
+r
+go
+exit
