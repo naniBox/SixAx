@@ -130,11 +130,11 @@
  * GPIOB_TRACESWO                   3   -  N/A
  * GPIOB_GPS_EXT_INT                4   -  3 - Push Pull output 50MHz.
  * GPIOB_GPS_TIMEPULSE              5   -  4 - Digital input.
- * GPIOB_I2C1_SCL                   6   -  7 - Open Drain output 50MHz.
- * GPIOB_I2C1_SDA                   7   -  7 - Open Drain output 50MHz.
+ * GPIOB_I2C1_SCL                   6   -  F - Alternate Open Drain output 50MHz.
+ * GPIOB_I2C1_SDA                   7   -  F - Alternate Open Drain output 50MHz.
 
  */
-#define VAL_GPIOBCRL            0x77438333      /*  PB7...PB0 */
+#define VAL_GPIOBCRL            0xFF438333      /*  PB7...PB0 */
 #define VAL_GPIOBCRH            0x88888888      /* PB15...PB8 */
 #define VAL_GPIOBODR            0xFFFFFFFF
 
